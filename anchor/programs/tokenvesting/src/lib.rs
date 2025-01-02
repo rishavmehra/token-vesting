@@ -6,7 +6,7 @@ use anchor_spl::{associated_token::AssociatedToken,
     self, Mint, TokenAccount, TokenInterface, TransferChecked
 }};
 
-declare_id!("coUnmi3oBUtwtd9fjeAvSsJssXh5A5xyPbhpewyzRVF");
+declare_id!("9WW9QQ1XjtM5biNYMJUad4hrAj12TjkmLm3dyNVSPJGM");
 
 pub const ANCHOR_DISCRIMINATOR: usize = 8;
 
