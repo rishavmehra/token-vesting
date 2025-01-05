@@ -28,7 +28,10 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
+    "react-flatpickr": "^3.10.13",
     "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.4.0",
+    "react-perfect-scrollbar": "^1.5.8",
     "solana-bankrun": "^0.4.0",
     "spl-token-bankrun": "^0.2.2"
   },
