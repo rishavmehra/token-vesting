@@ -71,8 +71,8 @@ export function useEmployee(walletKey: PublicKey) {
           beneficiary: empAcc.account.beneficiary.toString(),
           startTime: empAcc.account.startTime.toNumber(),
           endTime: empAcc.account.endTime.toNumber(),
-          totalAmount: empAcc.account.totalAmount.toNumber(),
-          totalWithdrawn: empAcc.account.totalWithdrawn.toNumber(),
+          totalAmount: empAcc.account.tokenAmount.toNumber(),
+          totalWithdrawn: empAcc.account.tokenWithdraw.toNumber(),
           cliffTime: empAcc.account.cliffTime.toNumber(),
           vestingAccount: empAcc.account.vestingAccount.toString(),
           companyName: vestingDetail.companyName,
@@ -118,7 +118,7 @@ export function useEmployee(walletKey: PublicKey) {
       });
 
       const instruction = await program.methods
-        .claimTokens(companyName)
+        .claimToken(companyName)
         .accounts({
           beneficiary: walletKey,
           employeeAccount: employeeAccountPubkey,

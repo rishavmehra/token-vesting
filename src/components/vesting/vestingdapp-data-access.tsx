@@ -24,9 +24,9 @@ export function useVesting() {
 
   const createVestingAccount = useMutation<string, Error, ICreateVesting>({
     mutationKey: ["vestingdapp", "create", { cluster }],
-    mutationFn: ({ companyName, tokenAmountTobeVested, mint }) =>
+    mutationFn: ({ companyName, mint }) =>
       program.methods
-        .createVestingAccount(companyName, tokenAmountTobeVested)
+        .createVestingAccount(companyName)
         .accounts({ mint: new PublicKey(mint), tokenProgram: TOKEN_PROGRAM_ID })
         .rpc(),
     onSuccess: (signature) => {
@@ -78,7 +78,7 @@ export function useCreateEmployeeVesting() {
       vestingAccount,
     }) =>
       program.methods
-        .createEmployeeVesting(startTime, endTime, totalAmount, cliffTime)
+        .createEmployeeAccount(startTime, endTime, totalAmount, cliffTime)
         .accounts({
           beneficiary,
           vestingAccount,

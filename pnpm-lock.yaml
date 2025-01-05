@@ -87,6 +87,9 @@ importers:
       '@types/react-dom':
         specifier: ^18
         version: 18.3.5(@types/react@18.3.18)
+      '@types/react-flatpickr':
+        specifier: ^3.8.11
+        version: 3.8.11
       eslint:
         specifier: ^8
         version: 8.57.1
@@ -1363,6 +1366,9 @@ packages:
     resolution: {integrity: sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==}
     peerDependencies:
       '@types/react': ^18.0.0
+
+  '@types/react-flatpickr@3.8.11':
+    resolution: {integrity: sha512-wXGyGRpUjiGknioxWzWJdNvF2XxKw5lAI7H64Iv7w4iL+1iT7QvAzrigz5FkW4lTg9IJOww6t7g21FzsrmRV6A==}
 
   '@types/react@18.3.18':
     resolution: {integrity: sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==}
@@ -6096,6 +6102,11 @@ snapshots:
   '@types/react-dom@18.3.5(@types/react@18.3.18)':
     dependencies:
       '@types/react': 18.3.18
+
+  '@types/react-flatpickr@3.8.11':
+    dependencies:
+      '@types/react': 18.3.18
+      flatpickr: 4.6.13
 
   '@types/react@18.3.18':
     dependencies:

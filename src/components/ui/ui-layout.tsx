@@ -66,11 +66,11 @@ export function UiLayout({
             Created by{" "}
             <a
               className="link hover:text-white"
-              href="https://github.com/kavit-patel"
+              href="https://github.com/rishavmehra"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Kavit Patel @ https://github.com/kavit-patel
+              Rishav @ https://github.com/rishavmehra
             </a>
           </p>
         </aside>

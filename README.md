@@ -4,7 +4,7 @@
 
 ### Prerequisites
 
-- Node v18.18.0 or higher
+- Node v23.1.0 or higher
 
 - Rust v1.77.2 or higher
 - Anchor CLI 0.30.1 or higher
